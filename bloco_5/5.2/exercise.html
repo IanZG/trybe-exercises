@@ -62,11 +62,11 @@
       document.body.appendChild(h1);
 
       let div = document.createElement("div");
-      div.className("main-content");
+      div.className = "main-content";
       document.body.appendChild(div);
 
       let divFilha = document.createElement("div");
-      divFilha.className("center-content");
+      divFilha.className = "center-content";
       div.appendChild(divFilha);
 
       let p = document.createElement("p");
@@ -85,6 +85,28 @@
       imagem.src = "https://picsum.photos/200";
       imagem.className = "small-image";
       divLeft.appendChild(imagem);
+
+      let lista = document.createElement("ul")
+      divRight.appendChild(lista);
+
+      let itens = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito"];
+      for (let i = 0; i < itens.length; i += 1) {
+          let itemLista = document.createElement("li");
+          itemLista.innerText = itens[i];
+          lista.appendChild(itemLista);
+      }
+
+      let h31 = document.createElement("h3");
+      h31.innerHTML = "uhul";
+      div.appendChild(h31);
+
+      let h32 = document.createElement("h3");
+      h32.innerHTML = "uuhhuull";
+      div.appendChild(h32);
+
+      let h33 = document.createElement("h3");
+      h33.innerHTML = "uuuhhhuuulll";
+      div.appendChild(h33);
     </script>
   </body>
 </html>
