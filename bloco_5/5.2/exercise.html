@@ -72,6 +72,19 @@
       let p = document.createElement("p");
       p.innerText = "VAMBORAAAA!";
       divFilha.appendChild(p);
+
+      let divLeft = document.createElement("div");
+      divLeft.className = "left-content";
+      div.appendChild(divLeft);
+
+      let divRight = document.createElement("div");
+      divRight.className = "right-content";
+      div.appendChild(divRight);
+
+      let imagem = document.createElement("img");
+      imagem.src = "https://picsum.photos/200";
+      imagem.className = "small-image";
+      divLeft.appendChild(imagem);
     </script>
   </body>
 </html>
