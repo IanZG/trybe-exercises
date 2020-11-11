@@ -58,9 +58,20 @@
   <body>
     <script>
       let h1 = document.createElement("h1");
-      h1.innerHTML = "Exercício 5.2 - JavaScript DOM");
+      h1.innerHTML = "Exercício 5.2 - JavaScript DOM";
       document.body.appendChild(h1);
 
+      let div = document.createElement("div");
+      div.className("main-content");
+      document.body.appendChild(div);
+
+      let divFilha = document.createElement("div");
+      divFilha.className("center-content");
+      div.appendChild(divFilha);
+
+      let p = document.createElement("p");
+      p.innerText = "VAMBORAAAA!";
+      divFilha.appendChild(p);
     </script>
   </body>
 </html>
