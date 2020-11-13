@@ -6,7 +6,61 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
+    <form action="" method="GET">
+       <fieldset>
+            <div class="elemento">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" name="nome" maxlength="40" id="nomeCompleto" required>
+            </div>
+            <div class="elemento">
+                <label for="Email">Email:</label>
+                <input type="email" name="email" id="Email" maxlength="50" required>
+            </div>
+            <div class="elemento">
+                <label for="CPF">CPF:</label>
+                <input type="text" name="cpf" id="CPF" maxlength="11" required>
+            </div>
+            <div class="elemento">
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="end" id="endereco" maxlength="200" required>
+            </div>
+            <div class="elemento">
+                <label for="cidade">Atual Cidade:</label>
+                <input type="text" name="cidade" id="cidade" maxlength="28" required>
+            </div>
+            <div class="elemento">
+                <label for="estado">Estado:</label>
+                <input type="text" name="est" id="estado" maxlength="28" required>
+            </div>
+            <div class="elemento">
+                <p>Tipo:</p>
+                <label for="tipo">Casa</label>
+                <input type="radio" name="tipo" id="tipo" checked>
+                <label for="tipo2">Apartameto</label>
+                <input type="radio" name="tipo" id="tipo2">
+                <label for="tipo3">Outro</label>
+                <input type="radio" name="tipo" id="tipo3">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div class="txtArea">
+                <label for="resumoCurriculo">Resumo de Seu Curriculo:</label>
+                <textarea name="resumo" id="resumoCurriculo" rows="5" cols="20">Limite: 1000 caracteres</textarea>
+            </div>
+            <div class="elemento">
+                <label for="cargo">Cargo Atual/Almejado:</label>
+                <input type="text" name="cargo" id="cargo" maxlength="50" required>
+            </div>
+            <div class="txtArea">
+                <label for="resumoCargo">Resumo de Seu Cargo:</label>
+                <textarea name="resumocargo" id="resumoCargo" rows="5" cols="20">Limite: 500 caracteres</textarea>
+            </div>
+            <div class="elemento">
+                <label for="dataInicio">Data de Inicio</label>
+                <input type="date" name="inicio" id="dataInicio" required>
+            </div> 
+        </fieldset>
+    </form>
     <script src="script.js"></script>
   </body>
 </html>
