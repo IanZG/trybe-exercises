@@ -63,10 +63,15 @@ const books = [
   },
 ];
 
-const expected_result = false;
+const expected_result = [
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu'
+]
 
-function authorUnique() {
-
+function oldBooks() {
+  const livrosVelhos = books.filter(book => (book.releaseYear < 1961));
+  return arrayLivrosVelhos = livrosVelhos.map(book => book.name)
 }
 
-assert.equal(authorUnique(), expected_result);
+assert.deepEqual(oldBooks(), expected_result);

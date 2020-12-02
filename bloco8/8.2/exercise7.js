@@ -63,10 +63,12 @@ const books = [
   },
 ];
 
-const expected_result = false;
+const expected_result = 'O Senhor dos Anéis';
 
-function authorUnique() {
-
+function authorWith3DotsOnName() {
+  return books.find(book => (
+    book.author.name.split(' ').filter(palavra => palavra.endsWith('.')).length === 3
+  )).name;
 }
 
-assert.equal(authorUnique(), expected_result);
+assert.deepEqual(authorWith3DotsOnName(), expected_result);
